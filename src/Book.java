@@ -1,25 +1,25 @@
 class Book {
-    private String title;
-    private Author authorName;
+    private final String title;
+    private final Author author;
     private int publicationYear;
 
     public Book(String bookTitle, Author bookAuthor, int bookYear) {
         title = bookTitle;
-        authorName = bookAuthor;
+        author = bookAuthor;
         publicationYear = bookYear;
     }
+
     @Override
     public String toString() {
-        return "'" + title + "'" + ", " + authorName + ", " + publicationYear;
+        return "'" + title + "'" + ", " + author + ", " + publicationYear;
     }
 
     public String getTitle() {
         return title;
     }
 
-
-    public Author getAuthorName() {
-        return authorName;
+    public Author getAuthor() {
+        return author;
     }
 
 
