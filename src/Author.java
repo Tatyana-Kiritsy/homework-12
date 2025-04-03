@@ -6,6 +6,7 @@ class Author {
         name = authorName;
         surname = authorSurname;
     }
+
     @Override
     public String toString() {
         return name + " " + surname;
